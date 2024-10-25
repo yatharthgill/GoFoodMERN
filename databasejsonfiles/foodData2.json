@@ -1,0 +1,191 @@
+[
+    {
+      "CategoryName": "Biryani/Rice",
+      "name": "Veg Biryani",
+      "img": "https://media.istockphoto.com/photos/veg-biryani-picture-id1363306527?b=1&k=20&m=1363306527&s=170667a&w=0&h=VCbro7CX8nq2kruynWOCO2GbMGCea2dDJy6O6ebCKD0=",
+      "options": [{ "half": "150", "full": "260" }],
+      "description": "Made using Indian masalas and Basmati rice. Barbequed pieces of Paneer/Chicken/Mutton were added."
+    },
+    {
+      "CategoryName": "Biryani/Rice",
+      "name": "Chicken Biryani",
+      "img": "https://media.istockphoto.com/photos/chicken-biryani-picture-id1149369994?b=1&k=20&m=1149369994&s=170667a&w=0&h=cDjT2OmkOACxpdOkF7uJBNMgfwPi5jwEYIspDx8xEU8=",
+      "options": [{ "half": "180", "full": "320" }],
+      "description": "Spicy chicken biryani with basmati rice, seasoned with aromatic spices."
+    },
+    {
+      "CategoryName": "Biryani/Rice",
+      "name": "Mutton Biryani",
+      "img": "https://media.istockphoto.com/photos/mutton-biryani-picture-id1207684712?b=1&k=20&m=1207684712&s=170667a&w=0&h=wvPUaF30y-8pl9yowtsFI0zmr9I4inS8nUDBmxfnNkE=",
+      "options": [{ "half": "220", "full": "400" }],
+      "description": "Traditional mutton biryani, slow-cooked with herbs and spices."
+    },
+    {
+      "CategoryName": "Kebab",
+      "name": "Chicken Kebab",
+      "img": "https://media.istockphoto.com/photos/grilled-chicken-kebab-picture-id858145190?b=1&k=20&m=858145190&s=170667a&w=0&h=IrPjcEj5wEyMJcd2AtKvGV0aX90AIsZIxA1bgM0SJeI=",
+      "options": [{ "half": "200", "full": "350" }],
+      "description": "Succulent pieces of grilled chicken marinated with spices."
+    },
+    {
+      "CategoryName": "Kebab",
+      "name": "Paneer Tikka",
+      "img": "https://media.istockphoto.com/photos/paneer-tikka-picture-id1207517229?b=1&k=20&m=1207517229&s=170667a&w=0&h=hEZTbPSM2UpR7QIH5sdH0jdAA8CpNpSLn4WoS_8pnKs=",
+      "options": [{ "half": "180", "full": "320" }],
+      "description": "Grilled paneer cubes marinated in a spicy yogurt mix."
+    },
+    {
+      "CategoryName": "Kebab",
+      "name": "Mutton Seekh Kebab",
+      "img": "https://media.istockphoto.com/photos/mutton-seekh-kebab-picture-id1124510864?b=1&k=20&m=1124510864&s=170667a&w=0&h=kEOtcf9wMOUrZyvbchW2Z0PmgnvvTCgoTDbDDkpzJVE=",
+      "options": [{ "half": "250", "full": "450" }],
+      "description": "Juicy mutton kebabs grilled to perfection with a blend of spices."
+    },
+    {
+      "CategoryName": "Burger",
+      "name": "Cheeseburger",
+      "img": "https://media.istockphoto.com/photos/cheeseburger-picture-id1191044949?b=1&k=20&m=1191044949&s=170667a&w=0&h=e9DbkFH6L5gjN0vTFmAuwZ6LQ-FG63DaL62YsI2ShEI=",
+      "options": [{ "regular": "150", "large": "220" }],
+      "description": "Juicy beef patty topped with cheddar cheese, lettuce, and tomato."
+    },
+    {
+      "CategoryName": "Burger",
+      "name": "Chicken Burger",
+      "img": "https://media.istockphoto.com/photos/chicken-burger-picture-id1278933069?b=1&k=20&m=1278933069&s=170667a&w=0&h=V9fXUXxULwKRbbLbnRmvjOEKiwAKwN7pqqvxRHiyq6c=",
+      "options": [{ "regular": "160", "large": "240" }],
+      "description": "Crispy fried chicken with lettuce, mayo, and cheese in a soft bun."
+    },
+    {
+      "CategoryName": "Burger",
+      "name": "Veggie Burger",
+      "img": "https://media.istockphoto.com/photos/vegetarian-burger-picture-id641921554?b=1&k=20&m=641921554&s=170667a&w=0&h=-8p-GfVzAIx6r82dDdT-hThIWYbpzMiOUHsmqg--m7g=",
+      "options": [{ "regular": "140", "large": "200" }],
+      "description": "A healthy veggie patty with fresh vegetables and vegan mayo."
+    },
+    {
+      "CategoryName": "Seafood",
+      "name": "Grilled Salmon",
+      "img": "https://media.istockphoto.com/photos/grilled-salmon-steak-picture-id1086255864?b=1&k=20&m=1086255864&s=170667a&w=0&h=eVw5L5ItHP2jEz_EjsfIUKl_Xv7YPvgdycN4RT8jKtA=",
+      "options": [{ "small": "300", "large": "500" }],
+      "description": "Grilled salmon fillet seasoned with herbs and lemon."
+    },
+    {
+      "CategoryName": "Seafood",
+      "name": "Prawn Curry",
+      "img": "https://media.istockphoto.com/photos/prawn-curry-picture-id1254459485?b=1&k=20&m=1254459485&s=170667a&w=0&h=rjEOug5q69AfwWABJqrmcx1N2dvzWhM0s-t_Z_OGWs0=",
+      "options": [{ "half": "320", "full": "550" }],
+      "description": "Delicious prawn curry with a rich coconut milk base."
+    },
+    {
+      "CategoryName": "Seafood",
+      "name": "Fish Tacos",
+      "img": "https://media.istockphoto.com/photos/fish-tacos-picture-id645056072?b=1&k=20&m=645056072&s=170667a&w=0&h=tHtB2dZn2RNiGPINXkrCM5pMvRFXpW5NjG2cWWqXk5A=",
+      "options": [{ "2 pieces": "150", "4 pieces": "280" }],
+      "description": "Crispy battered fish served in a soft taco shell with salsa."
+    },
+    {
+      "CategoryName": "Sushi",
+      "name": "Salmon Nigiri",
+      "img": "https://media.istockphoto.com/photos/salmon-nigiri-sushi-picture-id1138306967?b=1&k=20&m=1138306967&s=170667a&w=0&h=RVVG73lA39KPaOL-dmNZi2gOfp1pMYblY2BLIs60McQ=",
+      "options": [{ "6 pieces": "250", "12 pieces": "450" }],
+      "description": "Fresh salmon served on seasoned rice."
+    },
+    {
+      "CategoryName": "Sushi",
+      "name": "Tuna Roll",
+      "img": "https://media.istockphoto.com/photos/tuna-sushi-roll-picture-id512941426?b=1&k=20&m=512941426&s=170667a&w=0&h=oBo_Mh-MKcNeCfaDKU9xBWlDoFPIHtQiy2YVvVpJz2s=",
+      "options": [{ "8 pieces": "300", "16 pieces": "550" }],
+      "description": "Tuna roll with cucumber and spicy mayo."
+    },
+    {
+      "CategoryName": "Sushi",
+      "name": "Shrimp Tempura Roll",
+      "img": "https://media.istockphoto.com/photos/shrimp-tempura-roll-picture-id1203495059?b=1&k=20&m=1203495059&s=170667a&w=0&h=SO7f9aRIR7LlB0ps92NE7O7QUsFLZL4zYYGje0pTFpE=",
+      "options": [{ "8 pieces": "280", "16 pieces": "500" }],
+      "description": "Crispy shrimp tempura roll with avocado and sesame seeds."
+    },
+    {
+      "CategoryName": "Hot Dog",
+      "name": "Classic Hot Dog",
+      "img": "https://media.istockphoto.com/photos/hot-dog-picture-id1187998726?b=1&k=20&m=1187998726&s=170667a&w=0&h=mXlZCpD-QYdMuJzvYbBPbi5ayogYV2Sgq9XyO1l91wc=",
+      "options": [{ "regular": "120", "large": "180" }],
+      "description": "Classic beef hot dog served with mustard and ketchup."
+    },
+    {
+      "CategoryName": "Hot Dog",
+      "name": "Cheesy Hot Dog",
+      "img": "https://media.istockphoto.com/photos/cheese-filled-hot-dog-picture-id1132979879?b=1&k=20&m=1132979879&s=170667a&w=0&h=zbsATCmXBdTIOOW5jcl3MI_aIkMo1gXtzrwsFnk2bhs=",
+      "options": [{ "regular": "140", "large": "200" }],
+      "description": "Hot dog stuffed with cheddar cheese and topped with onions."
+    },
+    {
+      "CategoryName": "Hot Dog",
+      "name": "Bacon Wrapped Hot Dog",
+      "img": "https://media.istockphoto.com/photos/bacon-wrapped-hot-dog-picture-id1181458721?b=1&k=20&m=1181458721&s=170667a&w=0&h=_vZPoTGrZKgqXlbOjDKuDQkA4QkOxHTS4uTuMxBhBhI=",
+      "options": [{ "regular": "160", "large": "220" }],
+      "description": "Grilled hot dog wrapped in crispy bacon."
+    },
+    {
+      "CategoryName": "Ice Cream",
+      "name": "Vanilla Ice Cream",
+      "img": "https://media.istockphoto.com/photos/vanilla-ice-cream-picture-id474440654?b=1&k=20&m=474440654&s=170667a&w=0&h=vXmrmAy8iQ4b5umwqaRhKX_xML9jeXuYQMOtoN8r3rk=",
+      "options": [{ "scoop": "50", "bowl": "100" }],
+      "description": "Creamy vanilla ice cream made with fresh ingredients."
+    },
+    {
+      "CategoryName": "Ice Cream",
+      "name": "Chocolate Ice Cream",
+      "img": "https://media.istockphoto.com/photos/chocolate-ice-cream-picture-id872749284?b=1&k=20&m=872749284&s=170667a&w=0&h=kVpXPcce3AciMReumRiZC9KKP_xgCt-2xsdv7ZbDiFg=",
+      "options": [{ "scoop": "60", "bowl": "110" }],
+      "description": "Rich chocolate ice cream with a velvety texture."
+    },
+    {
+      "CategoryName": "Ice Cream",
+      "name": "Strawberry Ice Cream",
+      "img": "https://media.istockphoto.com/photos/strawberry-ice-cream-picture-id182603805?b=1&k=20&m=182603805&s=170667a&w=0&h=geFFAcHNoOYUANrCjOtZWIlNuRJeas87yISlZ6SiIjA=",
+      "options": [{ "scoop": "55", "bowl": "105" }],
+      "description": "Delicious strawberry ice cream made with real fruit."
+    },
+    {
+      "CategoryName": "Smoothie",
+      "name": "Berry Blast Smoothie",
+      "img": "https://media.istockphoto.com/photos/berry-smoothie-picture-id672180394?b=1&k=20&m=672180394&s=170667a&w=0&h=KvTsFddUtZHNaImdNuLkt0yue0-Yyl-x_Ut0pu7ts_c=",
+      "options": [{ "regular": "120", "large": "180" }],
+      "description": "A refreshing blend of berries, yogurt, and honey."
+    },
+    {
+      "CategoryName": "Smoothie",
+      "name": "Mango Smoothie",
+      "img": "https://media.istockphoto.com/photos/mango-smoothie-picture-id497286669?b=1&k=20&m=497286669&s=170667a&w=0&h=vQPA1ZzD4XpylgQKk-tMl8szdnVYwvov0oTDf96aICs=",
+      "options": [{ "regular": "130", "large": "190" }],
+      "description": "Sweet mango smoothie made with fresh mango and yogurt."
+    },
+    {
+      "CategoryName": "Smoothie",
+      "name": "Green Detox Smoothie",
+      "img": "https://media.istockphoto.com/photos/green-detox-smoothie-picture-id672679740?b=1&k=20&m=672679740&s=170667a&w=0&h=I9Cg76JOKNyjeOGnMhujTpECZo6VVhnJIXpVMcgxIVY=",
+      "options": [{ "regular": "140", "large": "200" }],
+      "description": "A healthy blend of spinach, kale, avocado, and apple."
+    },
+    {
+      "CategoryName": "Paella",
+      "name": "Seafood Paella",
+      "img": "https://media.istockphoto.com/photos/seafood-paella-picture-id947173422?b=1&k=20&m=947173422&s=170667a&w=0&h=Vu1xXSnHnPslZjq5fn_QS2JRMhlsXS4rnwqxIk1qi8c=",
+      "options": [{ "regular": "500", "large": "800" }],
+      "description": "Traditional Spanish rice dish with shrimp, mussels, and clams."
+    },
+    {
+      "CategoryName": "Paella",
+      "name": "Chicken Paella",
+      "img": "https://media.istockphoto.com/photos/chicken-paella-picture-id524508439?b=1&k=20&m=524508439&s=170667a&w=0&h=a5wXjlXrPfA7es5z_kHyeCp1CEuCzzmAYNREs0sXYKg=",
+      "options": [{ "regular": "450", "large": "750" }],
+      "description": "Savory paella made with tender chicken and vegetables."
+    },
+    {
+      "CategoryName": "Paella",
+      "name": "Vegetarian Paella",
+      "img": "https://media.istockphoto.com/photos/vegetarian-paella-picture-id182158607?b=1&k=20&m=182158607&s=170667a&w=0&h=Wo8ikCSLBZTYHw7zqKRRpIRZKfNgSmDH0zzQvHklEUs=",
+      "options": [{ "regular": "400", "large": "700" }],
+      "description": "Flavorful paella with seasonal vegetables and saffron rice."
+    }
+  ]

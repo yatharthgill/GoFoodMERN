@@ -1,0 +1,50 @@
+[
+{
+        "_id": {
+          "$oid": "671699803d8e8340118f390e"
+        },
+        "CategoryName": "Vegetables"
+      },
+      {
+        "_id": {
+          "$oid": "671699803d8e8340118f390f"
+        },
+        "CategoryName": "Fruits"
+      },
+      {
+        "_id": {
+          "$oid": "671699803d8e8340118f3910"
+        },
+        "CategoryName": "Grains"
+      },
+      {
+        "_id": {
+          "$oid": "671699803d8e8340118f3911"
+        },
+        "CategoryName": "Dairy Products"
+      },
+      {
+        "_id": {
+          "$oid": "671699803d8e8340118f3912"
+        },
+        "CategoryName": "Dry Fruits"
+      },
+      {
+        "_id": {
+          "$oid": "671699803d8e8340118f3913"
+        },
+        "CategoryName": "Seafood"
+      },
+      {
+        "_id": {
+          "$oid": "671699803d8e8340118f3915"
+        },
+        "CategoryName": "Herbs and Spices"
+      },
+      {
+        "_id": {
+          "$oid": "671699803d8e8340118f3916"
+        },
+        "CategoryName": "Organic Produce"
+    }       
+]
