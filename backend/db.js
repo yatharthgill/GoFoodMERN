@@ -22,6 +22,9 @@ const connectDB = async () => {
     const food_items = await db.collection("food_items").find({}).toArray();
     const food_category = await db.collection("food_category").find({}).toArray();
 
+
+    // Storing the client globally for use in your routes
+    global.dbClient = client; 
     global.food_items = food_items;
     global.food_category = food_category;
     

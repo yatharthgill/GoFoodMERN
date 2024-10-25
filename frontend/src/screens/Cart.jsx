@@ -1,11 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useCart, useDispatchCart } from '../components/ContextReducer';
 import { Button, ListGroup, ListGroupItem } from 'react-bootstrap';
 
 const Cart = () => {
   const cartItems = useCart();
   const dispatch = useDispatchCart();
-  
 
   const removeFromCart = (id) => {
     dispatch({ type: "REMOVE", id });
@@ -13,6 +12,19 @@ const Cart = () => {
 
   const clearCart = () => {
     dispatch({ type: "CLEAR" });
+  };
+
+  const globalFetch = async (url, options) => {
+    try {
+      const response = await fetch(url, options);
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      return await response.json();
+    } catch (error) {
+      console.error('Fetch error:', error);
+      throw error; // Re-throw to be handled later if needed
+    }
   };
 
   const handleCheckout = async () => {
@@ -29,7 +41,8 @@ const Cart = () => {
         qty: item.qty
       }));
 
-      const response = await fetch('http://localhost:5000/api/orderData', {
+      // Use the globalFetch function
+      const result = await globalFetch('http://localhost:5000/api/orderData', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -41,18 +54,23 @@ const Cart = () => {
         })
       });
 
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
+      // If you want to handle the response message
+      console.log(result.message);
 
-      await response.json();
-      clearCart();
+      clearCart(); // Clear the cart after successful checkout
     } catch (error) {
       console.error('Error during checkout:', error);
     }
   };
 
   const totalPrice = cartItems.reduce((acc, item) => acc + item.price * item.qty, 0);
+
+  useEffect(() => {
+    // Any cleanup or side effects can be handled here
+    return () => {
+      // Clean up actions if needed
+    };
+  }, []);
 
   return (
     <div className="container mt-3 pt-1 pb-2 bg-dark text-light" id='cart-container'>

@@ -5,13 +5,12 @@ const router = express.Router();
 const User = require('../models/UserSchema');
 const { body, validationResult } = require('express-validator');
 const EventEmitter = require('events');
-
+require('dotenv').config();
 
 EventEmitter.defaultMaxListeners = 15;
 
-const JWT_SECRET = 'f91d0f8d285872e30752921acdbf8c72512cbf74d6f58df450b545857c6347a3';
+const JWT_SECRET = process.env.JWT_SECRET;
 
-// Route to create a new user
 router.post(
   '/createuser',
   [
@@ -26,73 +25,74 @@ router.post(
     }
 
     try {
-      // Check if the email already exists
-      const existingUser = await User.findOne({ email: req.body.email });
+      const db = global.dbClient.db("gofoodmern"); // Use the global client to access the database
+      const existingUser = await db.collection('users').findOne({ email: req.body.email });
+      
       if (existingUser) {
         return res.status(400).json({ error: 'Email already in use' });
       }
 
-      // Hash the password before saving the user
       const salt = await bcrypt.genSalt(10);
-      
       const hashedPassword = await bcrypt.hash(req.body.password, salt);
 
-      // Create the new user
-      const user = await User.create({
+      const user = {
         name: req.body.name,
         email: req.body.email,
         password: hashedPassword,
         phone: req.body.phone,
         location: req.body.location,
-      });
+      };
 
-      // Generate a JWT token
-      const token = jwt.sign({ userId: user._id }, JWT_SECRET, { expiresIn: '1h' });
+      // Insert the new user into the 'users' collection
+      const result = await db.collection('users').insertOne(user);
+      
+      const token = jwt.sign({ userId: result.insertedId }, JWT_SECRET, { expiresIn: '1h' });
 
       res.send({
         message: 'User created successfully',
         token,
-        user,
+        user: { ...user, _id: result.insertedId }, // Include the newly created user with the generated _id
       });
-    } catch {
+    } catch (error) {
+      console.error('Error during user creation:', error);
       res.status(500).json({ error: 'Server error' });
     }
   }
 );
 
-// Route to login the user
 router.post('/login', async (req, res) => {
   try {
-    const user = await User.findOne({ email: req.body.email });
+    const db = global.dbClient.db("gofoodmern");
+    const user = await db.collection('users').findOne({ email: req.body.email });
+
     if (!user) {
       return res.status(400).json({ error: 'Invalid email or password' });
     }
 
-    // Compare the entered password with the hashed password
     const isMatch = await bcrypt.compare(req.body.password, user.password);
+
     if (!isMatch) {
       return res.status(400).json({ error: 'Invalid email or password' });
     }
 
     const data = {
       user: {
-        id: user.id,
+        id: user._id,
       },
     };
 
-    // Generate a JWT token
     const token = jwt.sign(data, JWT_SECRET, { expiresIn: '1h' });
-
+    
     return res.send({
       message: 'User logged in successfully',
       authToken: token,
     });
-  } catch {
+  } catch (error) {
+    console.error('Error during login:', error);
     res.status(500).json({ error: 'Server error' });
   }
 });
 
-// Middleware to verify the JWT token
 const authenticateToken = (req, res, next) => {
   const token = req.header('Authorization')?.split(' ')[1];
   if (!token) {
@@ -108,25 +108,8 @@ const authenticateToken = (req, res, next) => {
   }
 };
 
-// Protected route example (requires valid JWT token)
 router.get('/protected', authenticateToken, (req, res) => {
   res.send('This is a protected route');
 });
-
-// Route to delete a user (Protected)
-// router.delete('/deleteuser', authenticateToken, async (req, res) => {
-//   try {
-//     const user = await User.findOneAndDelete({ email: req.body.email });
-
-//     if (!user) {
-//       return res.status(404).json({ error: 'User not found' });
-//     }
-
-//     res.json({ message: 'User deleted successfully', user });
-//   } catch (error) {
-//     console.error('Error deleting user:', error);
-//     res.status(500).json({ error: 'Server error' });
-//   }
-// });
 
 module.exports = router;
